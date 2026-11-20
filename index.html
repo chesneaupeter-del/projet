@@ -1,659 +1,474 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Peter Chesneau – Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peter Chesneau – Portfolio BTS SIO option SLAM</title>
+  <meta name="description" content="Portfolio de Peter Chesneau, étudiant en BTS SIO option SLAM au lycée Carcouët : parcours, compétences, projets et certifications.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/animations.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
+<body>
+  <a class="skip-link" href="#accueil">Aller au contenu</a>
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Portfolio 👨‍💻</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#Accueil" class="active">Accueil<br></a></li>
-          <li><a href="#Information">Information Personnelle</a></li>
-          
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#accueil"><span class="brand-mark">PC</span> Peter Chesneau</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
+            <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+            <li class="nav-item ms-lg-3"><a class="btn btn-nav" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main class="main">
+  <main>
 
-    <!-- Hero Section -->
-    <section id="Accueil" class="hero section dark-background">
-
-      <img src="assets/img/prog.jpg" alt="" data-aos="fade-in">
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>CHESNEAU Peter</h2>
-        <p><span class="typed" data-typed-items="Dévelopeur full stack"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="Information" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="assets/img/pdp.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-7 about-info">
-                <p><strong>Name: </strong> <span>CHESNEAU Peter</span></p>
-                <p><strong>Profile: </strong> <span>Dévelopeur full stack</span></p>
-                <p><strong>Email: </strong> <span>chesneaupeter@gmail.com</span></p>
-                <p><strong>Phone: </strong> <span>+ 33 07 85 16 34 96</span></p>
-              </div>
-            </div>
-
-            <div class="skills-content skills-animation">
-
-              <h5>Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>C#</span> <i class="val">60%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>SQL</span> <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>PHP</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-             
-
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="about-me">
-              <h4>Autre sur moi</h4>
-              <p>
-                Étudiant en BTS SIO option SLAM 2ème année au lycée Carcouët.
-                J'ai choisis cette formation car je me suis toujours demandé comment ça fonctionnais derrière un jeu vidéo ou comment un ordinateur fonctionne.
-              </p>
-            
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>CV</h2>
-        <a href="assets/img/CV Peter Chesneau.pdf" download="CV Peter Chesneau.pdf" class="btn btn-primary btn-lg rounded-pill shadow-sm mt-3">
-  <i class="bi bi-download me-2"></i>Télécharger mon CV
-</a>
-      </div><!-- End Section Title -->
-
+    <!-- ============ ACCUEIL ============ -->
+    <section id="accueil" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 hero-text">
+            <span class="eyebrow light reveal">Portfolio · BTS SIO option SLAM</span>
+            <h1 class="reveal" style="--d:80ms">Peter <span class="grad">Chesneau</span></h1>
+            <p class="hero-role reveal" style="--d:160ms">Étudiant en BTS SIO – <span id="typed" data-items="Développement web en PHP|Applications en C#|Création de jeux avec Unity|Bases de données SQL">Développement web en PHP</span><span class="caret" aria-hidden="true"></span></p>
+            <p class="hero-lead reveal" style="--d:240ms">Étudiant en 2<sup>e</sup> année de BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers, au lycée Carcouët.</p>
+            <div class="hero-actions reveal" style="--d:320ms">
+              <a href="#projets" class="btn btn-main"><i class="bi bi-grid-1x2"></i> Voir mes projets</a>
+              <a href="assets/img/CV Peter Chesneau.pdf" download class="btn btn-ghost"><i class="bi bi-download"></i> Télécharger mon CV</a>
+            </div>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
+          <div class="col-lg-5 reveal" style="--d:200ms">
+            <div class="hero-photo">
+              <img src="assets/img/pdp.jpg" alt="Portrait de Peter Chesneau" width="640" height="872">
+              <span class="chip c1"><i class="bi bi-filetype-php"></i> PHP</span>
+              <span class="chip c2"><i class="bi bi-database"></i> SQL</span>
+              <span class="chip c3"><i class="bi bi-code-slash"></i> C#</span>
+              <span class="chip c4"><i class="bi bi-controller"></i> Unity</span>
+            </div>
           </div>
-
         </div>
-
       </div>
+      <a href="#apropos" class="scroll-hint" aria-label="Descendre"><i class="bi bi-chevron-double-down"></i></a>
+    </section>
 
-    </section><!-- /Resume Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="0" class="purecounter">232</span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="0" class="purecounter">521</span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="0" class="purecounter">1453</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="0" class="purecounter">32</span>
-              <p>Awards</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
+    <!-- ============ À PROPOS ============ -->
+    <section id="apropos" class="section">
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+        <div class="section-head reveal">
+          <span class="eyebrow">À propos</span>
+          <h2>Qui suis-je&nbsp;?</h2>
         </div>
-
+        <div class="row gy-4">
+          <div class="col-lg-7 reveal">
+            <p class="lead-text">J’ai choisi cette formation parce que je me suis toujours demandé comment fonctionne un jeu vidéo et, plus largement, comment fonctionne un ordinateur.</p>
+            <p>Je suis actuellement en deuxième année de BTS SIO option SLAM au lycée Carcouët. J’y développe des applications web et logicielles, et j’ai complété ma formation par plusieurs stages : électronique industrielle, maintenance informatique, puis développement et outils bureautiques.</p>
+            <ul class="qualities">
+              <li><i class="bi bi-lightning-charge"></i> Motivé</li>
+              <li><i class="bi bi-people"></i> Sociable</li>
+              <li><i class="bi bi-compass"></i> Autonome</li>
+              <li><i class="bi bi-arrows-angle-expand"></i> Flexible</li>
+            </ul>
+          </div>
+          <div class="col-lg-5 reveal" style="--d:120ms">
+            <div class="info-card">
+              <div class="info-row"><i class="bi bi-mortarboard"></i><div><span>Formation</span><strong>BTS SIO option SLAM · 2027</strong></div></div>
+              <div class="info-row"><i class="bi bi-building"></i><div><span>Établissement</span><strong>Lycée Carcouët</strong></div></div>
+              <div class="info-row"><i class="bi bi-geo-alt"></i><div><span>Localisation</span><strong>Divatte-sur-Loire</strong></div></div>
+              <div class="info-row"><i class="bi bi-envelope"></i><div><span>Email</span><strong><a href="mailto:chesneaupeter@gmail.com">chesneaupeter@gmail.com</a></strong></div></div>
+              <div class="info-row"><i class="bi bi-telephone"></i><div><span>Téléphone</span><strong><a href="tel:+33785163496">07 85 16 34 96</a></strong></div></div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Portfolio Section -->
+    <!-- ============ PARCOURS ============ -->
+    <section id="parcours" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Parcours</span>
+          <h2>Formation et expériences</h2>
+          <p>Mon cursus et les stages qui ont construit mes compétences.</p>
+        </div>
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <h3 class="col-title reveal"><i class="bi bi-mortarboard-fill"></i> Formation</h3>
+            <div class="timeline">
+              <article class="t-item reveal">
+                <span class="t-date">2025 – 2027</span>
+                <h4>BTS Services Informatiques aux Organisations</h4>
+                <p class="t-place">Lycée Carcouët · Option SLAM</p>
+                <ul>
+                  <li>Création d’un jeu avec Unity</li>
+                  <li>Site de gestion d’un club de vélo en PHP</li>
+                  <li>Site de gestion de club en PHP orienté objet</li>
+                </ul>
+              </article>
+              <article class="t-item reveal" style="--d:100ms">
+                <span class="t-date">Diplômé en 2025</span>
+                <h4>Baccalauréat Professionnel Systèmes Numériques</h4>
+                <p class="t-place">Lycée François Arago · Option RISC</p>
+                <p><span class="badge-soft">Mention Bien</span></p>
+              </article>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="col-title reveal"><i class="bi bi-briefcase-fill"></i> Expériences professionnelles</h3>
+            <div class="timeline">
+              <article class="t-item reveal">
+                <span class="t-date">Mai – juin 2026</span>
+                <h4>Stagiaire en développement</h4>
+                <p class="t-place">SNCF Loire Océan</p>
+                <ul>
+                  <li>Réalisation d’un site Intranet SharePoint</li>
+                  <li>Réalisation d’un projet Excel avec Power Query</li>
+                </ul>
+              </article>
+              <article class="t-item reveal" style="--d:100ms">
+                <span class="t-date">2022 – 2023</span>
+                <h4>Stagiaire en développement</h4>
+                <p class="t-place">Thales SIX</p>
+                <ul>
+                  <li>Modélisation d’une carte de pilotage avec KiCad</li>
+                  <li>Installation d’un banc d’essai pour systèmes électroniques</li>
+                  <li>Programmation d’une caméra Cognex pour des tests automatisés</li>
+                </ul>
+              </article>
+              <article class="t-item reveal" style="--d:200ms">
+                <span class="t-date">2022 – 2023</span>
+                <h4>Stagiaire en maintenance</h4>
+                <p class="t-place">APLIX</p>
+                <ul>
+                  <li>Maintenance informatique et résolution de pannes</li>
+                  <li>Création et gestion de machines virtuelles</li>
+                  <li>Support technique aux utilisateurs sur divers systèmes</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications section dark-background">
+    <!-- ============ COMPÉTENCES ============ -->
+    <section id="competences" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Compétences</span>
+          <h2>Ce que je sais faire</h2>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-5 reveal">
+            <div class="skill-card">
+              <h3><i class="bi bi-bar-chart-line"></i> Langages principaux</h3>
+              <div class="skill"><div class="skill-top"><span>SQL</span><span>80&nbsp;%</span></div><div class="bar"><span data-level="80"></span></div></div>
+              <div class="skill"><div class="skill-top"><span>PHP</span><span>75&nbsp;%</span></div><div class="bar"><span data-level="75"></span></div></div>
+              <div class="skill"><div class="skill-top"><span>C#</span><span>60&nbsp;%</span></div><div class="bar"><span data-level="60"></span></div></div>
+              <p class="skill-note">Niveau estimé par mes soins.</p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row gy-4">
+              <div class="col-md-6 reveal" style="--d:60ms"><div class="cat-card tilt"><i class="bi bi-code-slash"></i><h4>Développement</h4><ul class="tags"><li>PHP orienté objet</li><li>C#</li><li>SQL</li><li>Unity</li></ul></div></div>
+              <div class="col-md-6 reveal" style="--d:120ms"><div class="cat-card tilt"><i class="bi bi-diagram-2"></i><h4>Conception</h4><ul class="tags"><li>MERISE</li><li>UML</li></ul></div></div>
+              <div class="col-md-6 reveal" style="--d:180ms"><div class="cat-card tilt"><i class="bi bi-table"></i><h4>Données &amp; collaboratif</h4><ul class="tags"><li>Power Query</li><li>Excel</li><li>SharePoint</li></ul></div></div>
+              <div class="col-md-6 reveal" style="--d:240ms"><div class="cat-card tilt"><i class="bi bi-motherboard"></i><h4>Systèmes &amp; électronique</h4><ul class="tags"><li>Machines virtuelles</li><li>Maintenance</li><li>KiCad</li><li>Caméra Cognex</li></ul></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ============ PROJETS ============ -->
+    <section id="projets" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Réalisations</span>
+          <h2>Mes projets</h2>
+          <p>Projets réalisés en formation et lors de mes stages.</p>
+        </div>
+        <div class="filter-bar reveal" data-target="#projectGrid" role="group" aria-label="Filtrer les projets">
+          <button class="active" data-filter="all">Tous</button>
+          <button data-filter="dev">Formation</button>
+          <button data-filter="stage">Stages</button>
+        </div>
+        <div class="row gy-4" id="projectGrid">
+          <div class="col-lg-4 col-md-6 filter-item reveal" data-cat="dev" style="--d:0ms">
+            <article class="project-card tilt">
+              <div class="project-visual dev"><i class="bi bi-controller"></i></div>
+              <div class="project-body">
+                <span class="project-ctx">BTS SIO · SLAM</span>
+                <h3>Jeu vidéo avec Unity</h3>
+                <p>Création d’un jeu vidéo avec le moteur Unity, dans le cadre de la formation.</p>
+                <ul class="tags"><li>Unity</li><li>C#</li></ul>
+                <!-- Pour ajouter un lien : <a class="project-link" href="URL"><i class="bi bi-github"></i> Voir le code</a> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 filter-item reveal" data-cat="dev" style="--d:80ms">
+            <article class="project-card tilt">
+              <div class="project-visual dev"><i class="bi bi-bicycle"></i></div>
+              <div class="project-body">
+                <span class="project-ctx">BTS SIO · SLAM</span>
+                <h3>Site de gestion d’un club de vélo</h3>
+                <p>Site web de gestion d’un club de vélo développé en PHP « classique » (procédural).</p>
+                <ul class="tags"><li>PHP</li></ul>
+                <!-- Pour ajouter un lien : <a class="project-link" href="URL"><i class="bi bi-github"></i> Voir le code</a> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 filter-item reveal" data-cat="dev" style="--d:160ms">
+            <article class="project-card tilt">
+              <div class="project-visual dev"><i class="bi bi-diagram-3"></i></div>
+              <div class="project-body">
+                <span class="project-ctx">BTS SIO · SLAM</span>
+                <h3>Site de gestion de club en PHP objet</h3>
+                <p>Développement d’un site de gestion de club en PHP orienté objet.</p>
+                <ul class="tags"><li>PHP objet</li></ul>
+                <!-- Pour ajouter un lien : <a class="project-link" href="URL"><i class="bi bi-github"></i> Voir le code</a> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 filter-item reveal" data-cat="stage" style="--d:0ms">
+            <article class="project-card tilt">
+              <div class="project-visual stage"><i class="bi bi-microsoft-teams"></i></div>
+              <div class="project-body">
+                <span class="project-ctx">Stage · SNCF Loire Océan · mai – juin 2026</span>
+                <h3>Site Intranet SharePoint</h3>
+                <p>Réalisation d’un site Intranet avec SharePoint.</p>
+                <ul class="tags"><li>SharePoint</li></ul>
+                <!-- Pour ajouter un lien : <a class="project-link" href="URL"><i class="bi bi-github"></i> Voir le code</a> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 filter-item reveal" data-cat="stage" style="--d:80ms">
+            <article class="project-card tilt">
+              <div class="project-visual stage"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+              <div class="project-body">
+                <span class="project-ctx">Stage · SNCF Loire Océan · mai – juin 2026</span>
+                <h3>Projet Excel avec Power Query</h3>
+                <p>Réalisation d’un projet Excel utilisant Power Query.</p>
+                <ul class="tags"><li>Excel</li><li>Power Query</li></ul>
+                <!-- Pour ajouter un lien : <a class="project-link" href="URL"><i class="bi bi-github"></i> Voir le code</a> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 filter-item reveal" data-cat="stage" style="--d:160ms">
+            <article class="project-card tilt">
+              <div class="project-visual stage"><i class="bi bi-cpu"></i></div>
+              <div class="project-body">
+                <span class="project-ctx">Stage · Thales SIX · 2022 – 2023</span>
+                <h3>Carte de pilotage et banc d’essai</h3>
+                <p>Modélisation d’une carte de pilotage avec KiCad, installation d’un banc d’essai pour systèmes électroniques et programmation d’une caméra Cognex pour des tests automatisés.</p>
+                <ul class="tags"><li>KiCad</li><li>Cognex</li></ul>
+                <!-- Pour ajouter un lien : <a class="project-link" href="URL"><i class="bi bi-github"></i> Voir le code</a> -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section section-dark">
       <div class="cert-bg" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="section-head reveal">
+          <span class="eyebrow light">Cybersécurité</span>
+          <h2>Certifications</h2>
+          <p>Mon parcours d’apprentissage sur la plateforme TryHackMe.</p>
+        </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Certifications</h2>
-        <p>Mon parcours en cybersécurité sur TryHackMe</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <!-- Résumé animé -->
-        <div class="row gy-4 justify-content-center cert-summary" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6">
+        <div class="row gy-4 align-items-stretch cert-summary">
+          <div class="col-lg-4 reveal">
             <div class="cert-badge-card">
-              <div class="cert-badge-ring">
-                <img src="assets/img/certifications/badge-first-four.png" alt="Badge First Four">
-              </div>
-              <div>
-                <span class="cert-badge-kicker">Badge obtenu</span>
-                <h3>First Four</h3>
-              </div>
+              <div class="cert-badge-ring"><img src="assets/img/certifications/badge-first-four.png" alt="Badge First Four" width="78" height="80"></div>
+              <div><span class="kicker">Badge obtenu</span><h3>First Four</h3></div>
             </div>
-          </div><!-- End Badge -->
-
-          <div class="col-lg-8">
-            <div class="row gy-3 cert-stats">
-              <div class="col-sm-3 col-6"><div class="cert-stat"><span class="cert-count" data-target="all">0</span><p>Salles terminées</p></div></div>
-              <div class="col-sm-3 col-6"><div class="cert-stat easy"><span class="cert-count" data-target="easy">0</span><p>Easy</p></div></div>
-              <div class="col-sm-3 col-6"><div class="cert-stat medium"><span class="cert-count" data-target="medium">0</span><p>Medium</p></div></div>
-              <div class="col-sm-3 col-6"><div class="cert-stat hard"><span class="cert-count" data-target="hard">0</span><p>Hard</p></div></div>
+          </div>
+          <div class="col-lg-8 reveal" style="--d:100ms">
+            <div class="row g-3 cert-stats">
+              <div class="col-3 col-sm-3"><div class="cert-stat"><span class="cert-count" data-target="all">0</span><p>Salles</p></div></div>
+              <div class="col-3"><div class="cert-stat easy"><span class="cert-count" data-target="easy">0</span><p>Easy</p></div></div>
+              <div class="col-3"><div class="cert-stat medium"><span class="cert-count" data-target="medium">0</span><p>Medium</p></div></div>
+              <div class="col-3"><div class="cert-stat hard"><span class="cert-count" data-target="hard">0</span><p>Hard</p></div></div>
             </div>
             <p class="cert-total">Durée estimée cumulée : <strong><span class="cert-count" data-target="minutes">0</span> min</strong></p>
-          </div><!-- End Stats -->
-
+          </div>
         </div>
 
-        <h3 class="cert-subtitle" data-aos="fade-up">Challenges réalisés</h3>
-
-        <ul class="cert-filters" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="all" class="filter-active">Toutes</li>
-          <li data-filter="easy">Easy</li>
-          <li data-filter="medium">Medium</li>
-          <li data-filter="hard">Hard</li>
-        </ul><!-- End Filters -->
-
-        <div class="row gy-4 cert-grid">
-
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="easy" data-minutes="45" data-aos="zoom-in" data-aos-delay="0">
-              <article class="cert-card level-easy">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/intro-cyber.png" alt="Icône de la salle Intro to Cyber…" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 45 min</span></span>
-                  <h4>Intro to Cyber…</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="easy" data-minutes="15" data-aos="zoom-in" data-aos-delay="80">
-              <article class="cert-card level-easy">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/fools-mate.png" alt="Icône de la salle Fools Mate" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 15 min</span></span>
-                  <h4>Fools Mate</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="easy" data-minutes="15" data-aos="zoom-in" data-aos-delay="160">
-              <article class="cert-card level-easy">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/search-skills.png" alt="Icône de la salle Search Skills" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 15 min</span></span>
-                  <h4>Search Skills</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="medium" data-minutes="60" data-aos="zoom-in" data-aos-delay="240">
-              <article class="cert-card level-medium">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/cache-me-outside.png" alt="Icône de la salle Cache Me Outside" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Medium</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></span>
-                  <h4>Cache Me Outside</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="easy" data-minutes="15" data-aos="zoom-in" data-aos-delay="0">
-              <article class="cert-card level-easy">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/offensive-security.png" alt="Icône de la salle Offensive Securi…" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 15 min</span></span>
-                  <h4>Offensive Securi…</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="easy" data-minutes="60" data-aos="zoom-in" data-aos-delay="80">
-              <article class="cert-card level-easy">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/threat-hunting.png" alt="Icône de la salle Threat Hunting:…" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></span>
-                  <h4>Threat Hunting:…</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="medium" data-minutes="60" data-aos="zoom-in" data-aos-delay="160">
-              <article class="cert-card level-medium">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/key-artifacts.png" alt="Icône de la salle Key Artifacts fo…" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Medium</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></span>
-                  <h4>Key Artifacts fo…</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="hard" data-minutes="60" data-aos="zoom-in" data-aos-delay="240">
-              <article class="cert-card level-hard">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/management.png" alt="Icône de la salle Management…" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Hard</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></span>
-                  <h4>Management…</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="easy" data-minutes="15" data-aos="zoom-in" data-aos-delay="0">
-              <article class="cert-card level-easy">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/linux.png" alt="Icône de la salle Linux…" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 15 min</span></span>
-                  <h4>Linux…</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="easy" data-minutes="60" data-aos="zoom-in" data-aos-delay="80">
-              <article class="cert-card level-easy">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/cold-boot.png" alt="Icône de la salle Cold Boot" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></span>
-                  <h4>Cold Boot</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-            <div class="col-xl-3 col-lg-4 col-md-6 cert-item" data-level="medium" data-minutes="60" data-aos="zoom-in" data-aos-delay="160">
-              <article class="cert-card level-medium">
-                <div class="cert-thumb">
-                  <img src="assets/img/certifications/phantom-fob.png" alt="Icône de la salle Phantom Fob" loading="lazy">
-                </div>
-                <div class="cert-body">
-                  <span class="cert-meta"><span class="cert-level">Medium</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></span>
-                  <h4>Phantom Fob</h4>
-                  <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
-                </div>
-              </article>
-            </div><!-- End Room -->
-
-        </div><!-- End Grid -->
-
+        <h3 class="cert-subtitle reveal">Challenges réalisés</h3>
+        <div class="filter-bar on-dark reveal" data-target="#certGrid" role="group" aria-label="Filtrer par difficulté">
+          <button class="active" data-filter="all">Toutes</button>
+          <button data-filter="easy">Easy</button>
+          <button data-filter="medium">Medium</button>
+          <button data-filter="hard">Hard</button>
+        </div>
+        <div class="row gy-4" id="certGrid">
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="easy" data-minutes="45" style="--d:0ms">
+            <article class="cert-card level-easy tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/intro-cyber.png" alt="Icône de la salle Intro to Cyber…" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 45 min</span></div>
+                <h4>Intro to Cyber…</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="easy" data-minutes="15" style="--d:70ms">
+            <article class="cert-card level-easy tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/fools-mate.png" alt="Icône de la salle Fools Mate" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 15 min</span></div>
+                <h4>Fools Mate</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="easy" data-minutes="15" style="--d:140ms">
+            <article class="cert-card level-easy tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/search-skills.png" alt="Icône de la salle Search Skills" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 15 min</span></div>
+                <h4>Search Skills</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="medium" data-minutes="60" style="--d:210ms">
+            <article class="cert-card level-medium tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/cache-me-outside.png" alt="Icône de la salle Cache Me Outside" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Medium</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></div>
+                <h4>Cache Me Outside</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="easy" data-minutes="15" style="--d:0ms">
+            <article class="cert-card level-easy tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/offensive-security.png" alt="Icône de la salle Offensive Securi…" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 15 min</span></div>
+                <h4>Offensive Securi…</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="easy" data-minutes="60" style="--d:70ms">
+            <article class="cert-card level-easy tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/threat-hunting.png" alt="Icône de la salle Threat Hunting:…" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></div>
+                <h4>Threat Hunting:…</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="medium" data-minutes="60" style="--d:140ms">
+            <article class="cert-card level-medium tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/key-artifacts.png" alt="Icône de la salle Key Artifacts fo…" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Medium</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></div>
+                <h4>Key Artifacts fo…</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="hard" data-minutes="60" style="--d:210ms">
+            <article class="cert-card level-hard tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/management.png" alt="Icône de la salle Management…" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Hard</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></div>
+                <h4>Management…</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="easy" data-minutes="15" style="--d:0ms">
+            <article class="cert-card level-easy tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/linux.png" alt="Icône de la salle Linux…" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 15 min</span></div>
+                <h4>Linux…</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="easy" data-minutes="60" style="--d:70ms">
+            <article class="cert-card level-easy tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/cold-boot.png" alt="Icône de la salle Cold Boot" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Easy</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></div>
+                <h4>Cold Boot</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 filter-item cert-item reveal" data-cat="medium" data-minutes="60" style="--d:140ms">
+            <article class="cert-card level-medium tilt">
+              <div class="cert-thumb"><img src="assets/img/certifications/phantom-fob.png" alt="Icône de la salle Phantom Fob" loading="lazy" width="200" height="150"></div>
+              <div class="cert-body">
+                <div class="cert-meta"><span class="cert-level">Medium</span><span class="cert-time"><i class="bi bi-clock"></i> 60 min</span></div>
+                <h4>Phantom Fob</h4>
+                <span class="cert-done"><i class="bi bi-check-circle-fill"></i> Terminée</span>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Certifications Section -->
-
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Échangeons</h2>
+          <p>Une question sur mon parcours ou mes projets&nbsp;? N’hésitez pas à me contacter.</p>
+        </div>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-4 reveal"><a class="contact-card tilt" href="mailto:chesneaupeter@gmail.com"><i class="bi bi-envelope-at"></i><span>Email</span><strong>chesneaupeter@gmail.com</strong></a></div>
+          <div class="col-md-4 reveal" style="--d:80ms"><a class="contact-card tilt" href="tel:+33785163496"><i class="bi bi-telephone"></i><span>Téléphone</span><strong>07 85 16 34 96</strong></a></div>
+          <div class="col-md-4 reveal" style="--d:160ms"><a class="contact-card tilt" href="assets/img/CV Peter Chesneau.pdf" download><i class="bi bi-file-earmark-person"></i><span>Curriculum vitae</span><strong>Télécharger le CV (PDF)</strong></a></div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer accent-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div>
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Peter Chesneau · BTS SIO option SLAM · Lycée Carcouët</span>
+      <a href="#accueil">Retour en haut <i class="bi bi-arrow-up-short"></i></a>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <button id="toTop" class="to-top" aria-label="Retour en haut"><i class="bi bi-arrow-up"></i></button>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/animations.js"></script>
-
+  <script src="assets/js/app.js"></script>
 </body>
-
 </html>
