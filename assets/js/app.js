@@ -150,39 +150,4 @@
       });
     });
   }
-
-  /* ---------- Défilement 3D : les sections arrivent par la droite et repartent par la gauche ---------- */
-  if (!reduceMotion) {
-    const scenes = $$("main > section").map(sec => ({ sec, box: $(".container", sec) })).filter(o => o.box);
-    scenes.forEach(o => o.box.classList.add("fx3d"));
-    const smooth = t => t * t * (3 - 2 * t);
-    const clamp = v => Math.min(Math.max(v, 0), 1);
-    let ticking = false;
-
-    function update3D() {
-      ticking = false;
-      const vh = window.innerHeight, vw = window.innerWidth;
-      const small = vw < 768;
-      const shift = vw * (small ? 0.22 : 0.38);   // décalage horizontal max
-      const angle = small ? 22 : 34;               // rotation max (degrés)
-      scenes.forEach(({ sec, box }) => {
-        const r = sec.getBoundingClientRect();
-        if (r.bottom < -vh * 0.5 || r.top > vh * 1.5) return;        // hors écran : on ne calcule pas
-        const a = smooth(clamp((r.top - vh * 0.08) / (vh * 0.7)));    // arrivée (par la droite)
-        const b = smooth(clamp((vh * 0.45 - r.bottom) / (vh * 0.5))); // départ (vers la gauche)
-        const x = a * shift - b * shift;
-        const ry = -a * angle + b * angle;
-        const z = -(a + b) * 220;
-        const sc = 1 - (a + b) * 0.06;
-        box.style.transform = (a + b) < 0.001 ? "" :
-          "perspective(1500px) translate3d(" + x.toFixed(1) + "px,0," + z.toFixed(1) + "px) rotateY(" + ry.toFixed(2) + "deg) scale(" + sc.toFixed(3) + ")";
-        box.style.opacity = (1 - Math.max(a, b) * 0.9).toFixed(3);
-      });
-    }
-    function request3D() { if (!ticking) { ticking = true; requestAnimationFrame(update3D); } }
-    window.addEventListener("scroll", request3D, { passive: true });
-    window.addEventListener("resize", request3D);
-    window.addEventListener("load", request3D);
-    update3D();
-  }
 })();
