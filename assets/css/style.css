@@ -244,10 +244,6 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
 .js .reveal.is-visible { opacity: 1; transform: none; }
 .tilt { transform-style: preserve-3d; }
 
-/* ---------- Défilement 3D ---------- */
-main { overflow-x: clip; }
-.fx3d { will-change: transform, opacity; transform-origin: 50% 50%; backface-visibility: hidden; }
-
 /* ---------- Keyframes ---------- */
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
 @keyframes bob { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 6px); } }
